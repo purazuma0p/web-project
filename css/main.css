@@ -665,3 +665,31 @@
     0%, 100% { opacity: 0.3; }
     50% { opacity: 1; }
   }
+/* main.cssの一番下に追加 */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .nav-links { display: none; } /* スマホではハンバーガーメニューに */
+  
+  h1 {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+  
+  .hero { padding: 0 1.5rem; }
+  
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .service-desc { display: none; } /* スマホでは説明文を隠す */
+  
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
