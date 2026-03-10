@@ -56,3 +56,4 @@
   }, { threshold: 0.5 });
 
   counters.forEach(c => observer.observe(c));
+console.log('Custom cursor and stat counter initialized');
